@@ -1,0 +1,24 @@
+version: 2
+jobs:
+  job1:
+    docker:
+      - image: circleci/node:14.17.6
+    steps:
+      - checkout
+      - run: npm install
+      - run: npm test
+  job2:
+    docker:
+      - image: circleci/node:14.17.6
+    steps:
+      - checkout
+      - run: cat README.md
+      
+workflows:
+  version: 2
+  one-and-two:
+    jobs:
+      - job1
+      - job2:
+          requires:
+            - job1
