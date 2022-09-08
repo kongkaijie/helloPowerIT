@@ -1,0 +1,22 @@
+{
+  "name": "hellopowerit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "sum.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kongkaijie/helloPowerIT.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kongkaijie/helloPowerIT/issues"
+  },
+  "homepage": "https://github.com/kongkaijie/helloPowerIT#readme",
+  "devDependencies": {
+    "jest": "^29.0.2"
+  }
+}
